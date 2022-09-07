@@ -18,6 +18,7 @@ const initialState = {
   nav: false,
   cart: false,
   orderModal: false,
+  goToCart: false,
 };
 const store = createStore(Actions, initialState);
 root.render(

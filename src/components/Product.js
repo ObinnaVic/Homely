@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { INCREASE } from './Action';
+import { OPENCART, INCREASE } from './Action';
 
 
-const Product = ({img, name, amount, price, increase}) => {
+const Product = ({img, name, amount, price, increase, goToCart, openCart}) => {
     return (
       <>
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 p-5 d-flex justify-content-center"
-        >
+        <div className="col-lg-4 col-md-6 col-sm-12 p-5 d-flex justify-content-center">
           <div className="products d-flex flex-column align-items-center py-3">
             <img src={img} className="food-img" alt="food" />
             <h6>{name}</h6>
@@ -22,18 +20,27 @@ const Product = ({img, name, amount, price, increase}) => {
                 + ADD
               </button>
             </div>
+            <button className="border-0 btn-link btn" onClick={() => openCart()}>
+              <h6 className={goToCart ? "text-color" : "d-none"}>Go to Cart</h6>
+            </button>
           </div>
         </div>
       </>
     );
 }
 
+const mapStateToProps = (store) => {
+  const {goToCart} = store;
+  return {goToCart}
+}
+
 const mapDispatchToProps = (dispatch, ownProps) => {
     const {id} = ownProps
     return {
       increase: () => dispatch({ type: INCREASE, payload: { id } }),
+      openCart: () => dispatch({ type: OPENCART }),
     };
 }
 
 
-export default connect(null, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

@@ -1,4 +1,4 @@
-import { CART, OPENNAV, OPENMODAL,CLOSEMODAL, CLOSENAV, GET_TOTALS, INCREASE, DECREASE, OPENCART, CLOSECART, OPEN_ORDER_MODAL, CLOSE_ORDER_MODAL } from "./Action";
+import { OPENNAV, OPENMODAL,CLOSEMODAL, CLOSENAV, GET_TOTALS, INCREASE, DECREASE, OPENCART, CLOSECART, OPEN_ORDER_MODAL, CLOSE_ORDER_MODAL, GO_TO_CART } from "./Action";
 
 
 export const Actions = (state, action) => {
@@ -22,7 +22,7 @@ export const Actions = (state, action) => {
           }
           return item;
         });
-        return { ...state, data: tempCart };
+        return { ...state, data: tempCart, goToCart: true };
         break;
       case GET_TOTALS:
         let { total, amount } = state.data.reduce(
@@ -56,6 +56,7 @@ export const Actions = (state, action) => {
       case CLOSE_ORDER_MODAL:
         return { ...state, orderModal: false };
         break;
+
       default:
     }
     return state;
