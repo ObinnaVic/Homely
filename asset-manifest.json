@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Homely/static/css/main.243e2f11.css",
-    "main.js": "/Homely/static/js/main.1d8c984d.js",
+    "main.css": "/Homely/static/css/main.d3941754.css",
+    "main.js": "/Homely/static/js/main.27cbaf69.js",
     "static/js/787.5dc0e2a0.chunk.js": "/Homely/static/js/787.5dc0e2a0.chunk.js",
     "static/media/aboutt.png": "/Homely/static/media/aboutt.52d9910ab774282bccae.png",
     "static/media/headImg.png": "/Homely/static/media/headImg.5c65c7e057dbe4e38591.png",
     "static/media/scrum.png": "/Homely/static/media/scrum.296a9b436fb5bca0de9d.png",
     "static/media/phones.png": "/Homely/static/media/phones.f8a288f25409d0530baf.png",
     "index.html": "/Homely/index.html",
-    "main.243e2f11.css.map": "/Homely/static/css/main.243e2f11.css.map",
-    "main.1d8c984d.js.map": "/Homely/static/js/main.1d8c984d.js.map",
+    "main.d3941754.css.map": "/Homely/static/css/main.d3941754.css.map",
+    "main.27cbaf69.js.map": "/Homely/static/js/main.27cbaf69.js.map",
     "787.5dc0e2a0.chunk.js.map": "/Homely/static/js/787.5dc0e2a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.243e2f11.css",
-    "static/js/main.1d8c984d.js"
+    "static/css/main.d3941754.css",
+    "static/js/main.27cbaf69.js"
   ]
 }
