@@ -64,7 +64,7 @@
 }
 
 .add-btn {
-    height: 70%;
+    height: 50%;
 }
 
 .products {
@@ -141,6 +141,10 @@
     right: 0;
     padding: 10px;
     cursor: pointer;
+}
+
+.price-sec {
+    width: 100%;
 }
 
 
@@ -236,6 +240,8 @@
 
 }
 
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 320px) {
+    .products {
+        width: 100%;
+    }
 }
