@@ -28,7 +28,7 @@ const About = () => {
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-color">Testimonials</h2>
           <p>This is what our client are saying</p>
-          <div className="row">
+          <div className="row food-row">
             <div className="col-lg-4 col-sm-12 p-5">
               <div className="testimonial">
                 <h5 className="fw-bold">Paul James</h5>

@@ -162,7 +162,7 @@ const Nav = ({amount, nav, openNav, closeNav, data, total, closeCart, openCart, 
         <div
           className={
             orderModal
-              ? "d-flex align-items-center justify-content-center modal"
+              ? "d-flex align-items-center justify-content-center modal mt-5"
               : "d-none"
           }
         >

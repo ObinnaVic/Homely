@@ -6,8 +6,8 @@ import { OPENCART, INCREASE } from './Action';
 const Product = ({img, name, amount, price, increase, goToCart, openCart}) => {
     return (
       <>
-        <div className="col-lg-4 col-md-6 col-sm-12 p-5 d-flex justify-content-center">
-          <div className="products d-flex flex-column align-items-center py-3">
+        <div className="col-lg-4 col-md-6 col-sm-12 p-3 d-flex justify-content-center">
+          <div className="products d-flex flex-column align-items-center p-3">
             <img src={img} className="food-img" alt="food" />
             <h6>{name}</h6>
             <div className="d-flex align-items-center">
