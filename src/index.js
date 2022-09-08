@@ -19,6 +19,7 @@ const initialState = {
   cart: false,
   orderModal: false,
   goToCart: false,
+  submitOrder: false,
 };
 const store = createStore(Actions, initialState);
 root.render(

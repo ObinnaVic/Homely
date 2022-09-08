@@ -128,7 +128,7 @@
 
 
 .cart {
-    width: 20%;
+    width: 30%;
     position: absolute;
     top: 50px;
     right: 0;
@@ -232,7 +232,7 @@
     }
 
     .cart {
-        width: 60%;
+        width: 100%;
         position: absolute;
         left: 0;
     }

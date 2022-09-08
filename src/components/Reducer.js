@@ -1,4 +1,4 @@
-import { OPENNAV, OPENMODAL,CLOSEMODAL, CLOSENAV, GET_TOTALS, INCREASE, DECREASE, OPENCART, CLOSECART, OPEN_ORDER_MODAL, CLOSE_ORDER_MODAL, GO_TO_CART } from "./Action";
+import { OPENNAV, OPENMODAL,CLOSEMODAL, CLOSENAV, GET_TOTALS, INCREASE, DECREASE, OPENCART, CLOSECART, OPEN_ORDER_MODAL, CLOSE_ORDER_MODAL, GO_TO_CART, SUBMITORDER, CLOSE_SUBMIT } from "./Action";
 
 
 export const Actions = (state, action) => {
@@ -56,7 +56,12 @@ export const Actions = (state, action) => {
       case CLOSE_ORDER_MODAL:
         return { ...state, orderModal: false };
         break;
-
+      case SUBMITORDER:
+        return {...state, submitOrder: true, orderModal: false};
+        break;
+      case CLOSE_SUBMIT:
+        return {...state, submitOrder: false}
+        break;
       default:
     }
     return state;
